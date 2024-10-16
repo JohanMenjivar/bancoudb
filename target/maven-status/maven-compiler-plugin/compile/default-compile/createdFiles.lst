@@ -1,0 +1,12 @@
+com\udb\productosBancarios\Entity\GrupoDeProductos.class
+com\udb\productosBancarios\ProductosBancariosApplication.class
+com\udb\productosBancarios\Repository\ClienteRepository.class
+com\udb\productosBancarios\Entity\Cliente.class
+com\udb\productosBancarios\Controller\ClienteController.class
+com\udb\productosBancarios\DTO\GrupoDeProductosDTO.class
+GrupoDeProductosInitializer\DataInitializer.class
+com\udb\productosBancarios\Service\ClienteService.class
+com\udb\productosBancarios\Service\GrupoDeProductosService.class
+com\udb\productosBancarios\Repository\GrupoDeProductosRepository.class
+com\udb\productosBancarios\Controller\GrupoDeProductosController.class
+com\udb\productosBancarios\DTO\ClienteDTO.class
