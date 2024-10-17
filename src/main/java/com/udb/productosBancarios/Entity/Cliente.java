@@ -31,11 +31,25 @@ public class Cliente {
     private String telefono;
     private String idParaNotificacionPush;
 
+    // Campos de ingresos
+    private double salario;
+    private double negocioPropio;
+    private double pensiones;
+    private double remesas;
+    private double ingresosVarios;
+
+    // Campos de egresos
+    private double alquilerHipoteca;
+    private double canastaBasica;
+    private double financiamientos;
+    private double transporte;
+    private double serviciosPublicos;
+    private double saludSeguro;
+    private double egresosVarios;
+
     @ManyToOne
     @JoinColumn(name = "id_paquete")
     @JsonManagedReference
     private GrupoDeProductos grupoDeProductos;
     private boolean activado=false;
-
-    // Getters y Setters
 }

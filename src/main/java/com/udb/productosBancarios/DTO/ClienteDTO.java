@@ -20,5 +20,19 @@ public class ClienteDTO {
     private String idParaNotificacionPush;
     private Long idPaquete;
 
-    // Getters y Setters
+    // Campos de ingresos
+    private double salario;
+    private double negocioPropio;
+    private double pensiones;
+    private double remesas;
+    private double ingresosVarios;
+
+    // Campos de egresos
+    private double alquilerHipoteca;
+    private double canastaBasica;
+    private double financiamientos;
+    private double transporte;
+    private double serviciosPublicos;
+    private double saludSeguro;
+    private double egresosVarios;
 }

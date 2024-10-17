@@ -28,6 +28,22 @@ public class ClienteController {
         cliente.setIdParaNotificacionPush(clienteDTO.getIdParaNotificacionPush());
         cliente.setGrupoDeProductos(new GrupoDeProductos(clienteDTO.getIdPaquete()));
 
+        // Ingresos
+        cliente.setSalario(clienteDTO.getSalario());
+        cliente.setNegocioPropio(clienteDTO.getNegocioPropio());
+        cliente.setPensiones(clienteDTO.getPensiones());
+        cliente.setRemesas(clienteDTO.getRemesas());
+        cliente.setIngresosVarios(clienteDTO.getIngresosVarios());
+
+        // Egresos
+        cliente.setAlquilerHipoteca(clienteDTO.getAlquilerHipoteca());
+        cliente.setCanastaBasica(clienteDTO.getCanastaBasica());
+        cliente.setFinanciamientos(clienteDTO.getFinanciamientos());
+        cliente.setTransporte(clienteDTO.getTransporte());
+        cliente.setServiciosPublicos(clienteDTO.getServiciosPublicos());
+        cliente.setSaludSeguro(clienteDTO.getSaludSeguro());
+        cliente.setEgresosVarios(clienteDTO.getEgresosVarios());
+
         return ResponseEntity.ok(clienteService.saveCliente(cliente));
     }
 
@@ -61,6 +77,22 @@ public class ClienteController {
         clienteExistente.setTelefono(clienteDTO.getTelefono());
         clienteExistente.setIdParaNotificacionPush(clienteDTO.getIdParaNotificacionPush());
         clienteExistente.setGrupoDeProductos(new GrupoDeProductos(clienteDTO.getIdPaquete()));
+
+        // Ingresos
+        clienteExistente.setSalario(clienteDTO.getSalario());
+        clienteExistente.setNegocioPropio(clienteDTO.getNegocioPropio());
+        clienteExistente.setPensiones(clienteDTO.getPensiones());
+        clienteExistente.setRemesas(clienteDTO.getRemesas());
+        clienteExistente.setIngresosVarios(clienteDTO.getIngresosVarios());
+
+        // Egresos
+        clienteExistente.setAlquilerHipoteca(clienteDTO.getAlquilerHipoteca());
+        clienteExistente.setCanastaBasica(clienteDTO.getCanastaBasica());
+        clienteExistente.setFinanciamientos(clienteDTO.getFinanciamientos());
+        clienteExistente.setTransporte(clienteDTO.getTransporte());
+        clienteExistente.setServiciosPublicos(clienteDTO.getServiciosPublicos());
+        clienteExistente.setSaludSeguro(clienteDTO.getSaludSeguro());
+        clienteExistente.setEgresosVarios(clienteDTO.getEgresosVarios());
 
         return ResponseEntity.ok(clienteService.saveCliente(clienteExistente));
     }
